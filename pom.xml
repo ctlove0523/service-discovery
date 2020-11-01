@@ -6,7 +6,20 @@
 
 	<groupId>io.github.ctlove</groupId>
 	<artifactId>service-discovery</artifactId>
+	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<source.encoding>UTF-8</source.encoding>
+	</properties>
+
+	<modules>
+		<module>service-discovery-api</module>
+		<module>service-discovery-dns</module>
+		<module>service-discovery-kubernetes-api</module>
+	</modules>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -26,5 +39,19 @@
 
 	</dependencies>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>${source.encoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

@@ -1,4 +1,4 @@
-package io.github.ctlove0523.discovery;
+package io.github.ctlove0523.discovery.api;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

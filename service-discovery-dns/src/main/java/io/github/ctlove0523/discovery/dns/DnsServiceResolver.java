@@ -17,10 +17,10 @@ import javax.naming.directory.Attributes;
 import javax.naming.directory.DirContext;
 import javax.naming.directory.InitialDirContext;
 
-import io.github.ctlove0523.discovery.Instance;
-import io.github.ctlove0523.discovery.InstanceAddress;
-import io.github.ctlove0523.discovery.ServiceDiscoveryException;
-import io.github.ctlove0523.discovery.ServiceResolver;
+import io.github.ctlove0523.discovery.api.Instance;
+import io.github.ctlove0523.discovery.api.InstanceAddress;
+import io.github.ctlove0523.discovery.api.ServiceDiscoveryException;
+import io.github.ctlove0523.discovery.api.ServiceResolver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
