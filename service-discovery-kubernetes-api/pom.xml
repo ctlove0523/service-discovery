@@ -22,6 +22,11 @@
 			<artifactId>client-java</artifactId>
 			<version>10.0.0</version>
 		</dependency>
+		<dependency>
+			<groupId>io.github.ctlove0523</groupId>
+			<artifactId>commons</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 </project>
