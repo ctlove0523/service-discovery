@@ -18,6 +18,7 @@
 		<module>service-discovery-api</module>
 		<module>service-discovery-dns</module>
 		<module>service-discovery-kubernetes-api</module>
+		<module>service-discovery-consul</module>
 	</modules>
 
 	<dependencies>
