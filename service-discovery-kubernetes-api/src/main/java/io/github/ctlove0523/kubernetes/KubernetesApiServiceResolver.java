@@ -28,7 +28,7 @@ public class KubernetesApiServiceResolver implements ServiceResolver {
 
 	@Override
 	public List<Instance> resolve(String name) {
-		return null;
+		return lookup(name);
 	}
 
 	private List<Instance> lookup(String name) {

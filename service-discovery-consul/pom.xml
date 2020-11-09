@@ -17,6 +17,11 @@
 			<artifactId>service-discovery-api</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.ecwid.consul</groupId>
+			<artifactId>consul-api</artifactId>
+			<version>1.4.5</version>
+		</dependency>
 	</dependencies>
 
 </project>
