@@ -44,7 +44,10 @@ public class KubernetesApiServiceResolver implements ServiceResolver {
 
 		// todo map selector to string format
 		Map<String, String> selector = v1ServiceSpec.getSelector();
-		String stringFormatSelector = "";
+		String stringFormatSelector = selector.entrySet()
+			.stream()
+                        .map(entry -> entry.getKey() + "=" + entry.getValue())
+                        .collect(Collectors.joining(","));;
 
 		V1PodList v1PodList = listPodsBySelector(namespace, stringFormatSelector);
 		if (v1PodList == null || v1PodList.getItems() == null || v1PodList.getItems().isEmpty()) {
