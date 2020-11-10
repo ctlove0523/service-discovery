@@ -100,4 +100,9 @@ public class KubernetesApiServiceResolver implements ServiceResolver {
 
 		return HttpsClient.syncCall(request, V1PodList.class);
 	}
+
+	@Override
+	public int getOrder() {
+		return 2;
+	}
 }

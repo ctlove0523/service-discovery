@@ -100,4 +100,8 @@ public class DnsServiceResolver implements ServiceResolver {
 		return host.replaceAll("\\\\.$", "");
 	}
 
+	@Override
+	public int getOrder() {
+		return 0;
+	}
 }

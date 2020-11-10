@@ -13,4 +13,9 @@ public class ConsulServiceResolver implements ServiceResolver {
 	public List<Instance> resolve(String name) {
 		return null;
 	}
+
+	@Override
+	public int getOrder() {
+		return 0;
+	}
 }
